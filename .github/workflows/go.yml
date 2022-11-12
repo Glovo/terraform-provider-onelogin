@@ -55,13 +55,13 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    strategy:
-      fail-fast: false
-      matrix:
-        # list whatever Terraform versions here you would like to support
-        terraform:
-          - '1.0.*'
-          - '1.1.*'
+#    strategy: - Disable acceptance testing for now
+#      fail-fast: false
+#      matrix:
+#        # list whatever Terraform versions here you would like to support
+#        terraform:
+#          - '1.0.*'
+#          - '1.1.*'
     steps:
 
       - name: Check out code into the Go module directory
@@ -74,10 +74,10 @@ jobs:
           cache: true
         id: go
 
-      - uses: hashicorp/setup-terraform@v2
-        with:
-          terraform_version: ${{ matrix.terraform }}
-          terraform_wrapper: false
+#      - uses: hashicorp/setup-terraform@v2 - Disable acceptance testing for now
+#        with:
+#          terraform_version: ${{ matrix.terraform }}
+#          terraform_wrapper: false
 
       - name: Get dependencies
         run: |
