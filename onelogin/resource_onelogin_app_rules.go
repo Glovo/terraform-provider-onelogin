@@ -9,11 +9,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 
+	apprulesschema "github.com/glovo/terraform-provider-onelogin/ol_schema/rules"
+	appruleactionsschema "github.com/glovo/terraform-provider-onelogin/ol_schema/rules/actions"
+	appruleconditionsschema "github.com/glovo/terraform-provider-onelogin/ol_schema/rules/conditions"
+	"github.com/glovo/terraform-provider-onelogin/utils"
 	"github.com/onelogin/onelogin-go-sdk/pkg/client"
-	apprulesschema "github.com/onelogin/terraform-provider-onelogin/ol_schema/rules"
-	appruleactionsschema "github.com/onelogin/terraform-provider-onelogin/ol_schema/rules/actions"
-	appruleconditionsschema "github.com/onelogin/terraform-provider-onelogin/ol_schema/rules/conditions"
-	"github.com/onelogin/terraform-provider-onelogin/utils"
 )
 
 // AppRules returns a resource with the CRUD methods and Terraform Schema defined

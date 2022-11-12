@@ -7,9 +7,9 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 
+	authserverschema "github.com/glovo/terraform-provider-onelogin/ol_schema/auth_server"
+	authserverconfigurationschema "github.com/glovo/terraform-provider-onelogin/ol_schema/auth_server/configuration"
 	"github.com/onelogin/onelogin-go-sdk/pkg/client"
-	authserverschema "github.com/onelogin/terraform-provider-onelogin/ol_schema/auth_server"
-	authserverconfigurationschema "github.com/onelogin/terraform-provider-onelogin/ol_schema/auth_server/configuration"
 )
 
 // AuthServers returns a resource with the CRUD methods and Terraform Schema defined

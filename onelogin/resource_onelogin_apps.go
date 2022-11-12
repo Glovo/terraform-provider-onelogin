@@ -7,10 +7,10 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 
+	appschema "github.com/glovo/terraform-provider-onelogin/ol_schema/app"
+	appparametersschema "github.com/glovo/terraform-provider-onelogin/ol_schema/app/parameters"
+	appprovisioningschema "github.com/glovo/terraform-provider-onelogin/ol_schema/app/provisioning"
 	"github.com/onelogin/onelogin-go-sdk/pkg/client"
-	appschema "github.com/onelogin/terraform-provider-onelogin/ol_schema/app"
-	appparametersschema "github.com/onelogin/terraform-provider-onelogin/ol_schema/app/parameters"
-	appprovisioningschema "github.com/onelogin/terraform-provider-onelogin/ol_schema/app/provisioning"
 )
 
 // Apps returns a resource with the CRUD methods and Terraform Schema defined

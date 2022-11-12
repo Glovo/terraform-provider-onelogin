@@ -1,5 +1,5 @@
 # Onelogin Terraform Provider
-[![Go Report Card](https://goreportcard.com/badge/github.com/onelogin/terraform-provider-onelogin)](https://goreportcard.com/report/github.com/onelogin/terraform-provider-onelogin)
+[![Go Report Card](https://goreportcard.com/badge/github.com/glovo/terraform-provider-onelogin)](https://goreportcard.com/report/github.com/glovo/terraform-provider-onelogin)
 <a href='https://github.com/dcaponi/gopherbadger' target='_blank'>![gopherbadger-tag-do-not-edit](https://img.shields.io/badge/Go%20Coverage-100%25-brightgreen.svg?longCache=true&style=flat)</a>
 
 # Prerequisites
@@ -69,7 +69,7 @@ To debug / troubleshoot, set an environment variable `export TF_LOG=trace` to se
 
 5. The new tag will trigger the release action which makes builds for the OSes described in the `release.yaml`.
 
-6. Once the release action completes, go to the [Releases](https://github.com/onelogin/terraform-provider-onelogin/releases) section of the repository in github and look for the draft release with your version number.
+6. Once the release action completes, go to the [Releases](https://github.com/glovo/terraform-provider-onelogin/releases) section of the repository in github and look for the draft release with your version number.
 
 7. Click on that and ensure the build artifacts were uploaded to the release. Once you've verified this, click "Edit Draft" and "Publish Release".
 
