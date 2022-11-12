@@ -2,6 +2,11 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/glovo/terraform-provider-onelogin)](https://goreportcard.com/report/github.com/glovo/terraform-provider-onelogin)
 <a href='https://github.com/dcaponi/gopherbadger' target='_blank'>![gopherbadger-tag-do-not-edit](https://img.shields.io/badge/Go%20Coverage-100%25-brightgreen.svg?longCache=true&style=flat)</a>
 
+This is a maintained fork (from v0.2.0) of the terraform-provider-onelogin. It adds:
+
+- Bugfixes for auth servers
+- Compatibility with TF 1.+
+
 # Prerequisites
     1) Install Golang
     2) Install Terraform v0.12.24 or later
