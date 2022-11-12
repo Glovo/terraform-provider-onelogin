@@ -4,15 +4,23 @@
 name: Tests
 on:
   pull_request:
-    paths-ignore:
-      - 'README.md'
-      - .github/worflows/release.yml
+    paths:
+      - examples/**
+      - ol_schema/**
+      - main.go
+      - onelogin/**
+      - utils/**
+      - .github/worflows/go.yml
   push:
     branches:
       - main
-    paths-ignore:
-      - 'README.md'
-      - .github/worflows/release.yml
+    paths:
+      - examples/**
+      - ol_schema/**
+      - main.go
+      - onelogin/**
+      - utils/**
+      - .github/worflows/go.yml
 jobs:
   # ensure the code builds...
   build:
