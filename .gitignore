@@ -1,0 +1,14 @@
+main.tf
+*.tfstate
+*.tfstate.*
+*.log
+./vendor
+terraform-provider-onelogin
+.terraform
+.terraform.*
+dist
+coverage.out
+bin
+*.asc
+.idea/
+.DS_Store
