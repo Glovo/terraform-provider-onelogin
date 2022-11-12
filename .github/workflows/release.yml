@@ -2,8 +2,6 @@ name: Release
 on:
   workflow_dispatch:
   push:
-    paths:
-      - .github/workflows/release.yml
     tags:
     - 'v*'
 permissions:
