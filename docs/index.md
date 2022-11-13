@@ -17,6 +17,15 @@ Use the navigation to the left to read about the available resources.
 ## Example Usage
 
 ```hcl
+terraform {
+  required_providers {
+    onelogin = {
+      source  = "Glovo/onelogin"
+      version = "0.2.1"
+    }
+  }
+}
+
 # Configure the OneLogin Provider
 provider "onelogin" {}
 
