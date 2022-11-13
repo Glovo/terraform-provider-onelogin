@@ -17,7 +17,7 @@ If you are sideloading this provider (i.e. not getting this via the Terraform st
 
 1) In the ./terraform-provider-onelogin directory run:
     ```
-    make sideload
+    go build .
     ```
 
     If you are using Terraform v0.13.x or later you can use following Terraform configuration for sideloaded version of this provider:
@@ -25,8 +25,8 @@ If you are sideloading this provider (i.e. not getting this via the Terraform st
     terraform {
       required_providers {
         onelogin = {
-          source  = "onelogin.com/onelogin/onelogin"
-          version = "0.1.10"
+          source  = "Glovo/onelogin"
+          version = "0.2.1"
         }
       }
     }
@@ -122,30 +122,3 @@ To update dependencies for this project:
 ```
 go mod -u ./...
 ```
-
-# Helpful Makefile Commands
-
-**testacc** runs acceptance tests (actually creates resources in OL then cleans them up)
-```
-make testacc
-```
-
-**sideload** builds and sideloads the provider for local dev/testing
-```
-make sideload
-```
-
-**clean-terraform** reset terraform state in the local folder
-```
-make clean-terraform
-```
-
-**test** runs unit tests (non-acceptance and no real requests made) and applies coverage badge
-```
-make test
-```
-
-**secure** runs gosec code analysis to warn about possible exploits specific to go
-```
-make secure
-````
