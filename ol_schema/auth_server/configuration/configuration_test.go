@@ -20,17 +20,15 @@ func TestSchema(t *testing.T) {
 
 func TestInflate(t *testing.T) {
 	tests := map[string]struct {
-		ResourceData   []interface{}
+		ResourceData   map[string]interface{}
 		ExpectedOutput authservers.AuthServerConfiguration
 	}{
 		"creates and returns the address of an AuthServerConfiguration": {
-			ResourceData: []interface{}{
-				map[string]interface{}{
-					"resource_identifier":              "test.com",
-					"audiences":                        []string{"aud_1", "aud_2"},
-					"refresh_token_expiration_minutes": 2,
-					"access_token_expiration_minutes":  2,
-				},
+			ResourceData: map[string]interface{}{
+				"resource_identifier":              "test.com",
+				"audiences":                        []string{"aud_1", "aud_2"},
+				"refresh_token_expiration_minutes": 2,
+				"access_token_expiration_minutes":  2,
 			},
 			ExpectedOutput: authservers.AuthServerConfiguration{
 				ResourceIdentifier:            oltypes.String("test.com"),
