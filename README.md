@@ -6,6 +6,7 @@ This is a maintained fork (from v0.2.0) of the terraform-provider-onelogin. It a
 
 - Bugfixes for auth servers
 - Compatibility with TF 1.+
+- Scopes
 
 # Prerequisites
     1) Install Golang
