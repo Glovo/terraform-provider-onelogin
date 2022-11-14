@@ -9,7 +9,7 @@ import (
 	authservers "github.com/onelogin/onelogin-go-sdk/pkg/services/auth_servers"
 )
 
-// Schema returns a key/value map of the various fields that make up an App at OneLogin.
+// Schema returns a key/value map of the various fields that make up an Auth Server at OneLogin.
 func Schema() map[string]*schema.Schema {
 	return map[string]*schema.Schema{
 		"name": &schema.Schema{

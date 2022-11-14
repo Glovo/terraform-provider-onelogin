@@ -22,7 +22,7 @@ func TestInflate(t *testing.T) {
 		ResourceData   map[string]interface{}
 		ExpectedOutput authservers.AuthServer
 	}{
-		"creates and returns the address of a user struct": {
+		"creates an auth server with configuration": {
 			ResourceData: map[string]interface{}{
 				"name":        "name",
 				"description": "description",
