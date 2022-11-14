@@ -35,41 +35,41 @@ func Schema() map[string]*schema.Schema {
 
 // Inflate takes a key/value map of interfaces and uses the fields to construct
 // a AppProvisioning struct, a sub-field of a OneLogin App.
-func Inflate(in []interface{}) authservers.AuthServerConfiguration {
-	s := in[0].(map[string]interface{})
+func Inflate(in map[string]interface{}) authservers.AuthServerConfiguration {
 	out := authservers.AuthServerConfiguration{}
-	if val, notNil := s["audiences"].([]string); notNil {
+	if val, notNil := in["audiences"].([]string); notNil {
 		out.Audiences = make([]string, len(val))
 		for i, str := range val {
 			out.Audiences[i] = str
 		}
 	}
-	if ri, notNil := s["resource_identifier"].(string); notNil {
+	if ri, notNil := in["resource_identifier"].(string); notNil {
 		out.ResourceIdentifier = oltypes.String(ri)
 	}
-	if at, notNil := s["access_token_expiration_minutes"].(int); notNil {
+	if at, notNil := in["access_token_expiration_minutes"].(int); notNil {
 		out.AccessTokenExpirationMinutes = oltypes.Int32(int32(at))
 	}
-	if rt, notNil := s["refresh_token_expiration_minutes"].(int); notNil {
+	if rt, notNil := in["refresh_token_expiration_minutes"].(int); notNil {
 		out.RefreshTokenExpirationMinutes = oltypes.Int32(int32(rt))
 	}
 	return out
 }
 
 // Flatten takes an AuthServer configuration and converts it to a map of varied types
-func Flatten(asc authservers.AuthServerConfiguration) map[string]interface{} {
-	out := map[string]interface{}{}
+func Flatten(asc authservers.AuthServerConfiguration) []map[string]interface{} {
+	out := make([]map[string]interface{}, 1)
+	out[0] = map[string]interface{}{}
 	if asc.ResourceIdentifier != nil {
-		out["resource_identifier"] = *asc.ResourceIdentifier
+		out[0]["resource_identifier"] = *asc.ResourceIdentifier
 	}
 	if asc.Audiences != nil {
-		out["audiences"] = asc.Audiences
+		out[0]["audiences"] = asc.Audiences
 	}
 	if asc.AccessTokenExpirationMinutes != nil {
-		out["access_token_expiration_minutes"] = *asc.AccessTokenExpirationMinutes
+		out[0]["access_token_expiration_minutes"] = *asc.AccessTokenExpirationMinutes
 	}
 	if asc.RefreshTokenExpirationMinutes != nil {
-		out["refresh_token_expiration_minutes"] = *asc.RefreshTokenExpirationMinutes
+		out[0]["refresh_token_expiration_minutes"] = *asc.RefreshTokenExpirationMinutes
 	}
 	return out
 }

@@ -27,13 +27,11 @@ func TestInflate(t *testing.T) {
 				"name":        "name",
 				"description": "description",
 				"firstname":   "description",
-				"configuration": []interface{}{
-					map[string]interface{}{
-						"resource_identifier":              "test.com",
-						"audiences":                        []string{"aud_1", "aud_2"},
-						"refresh_token_expiration_minutes": 2,
-						"access_token_expiration_minutes":  2,
-					},
+				"configuration": map[string]interface{}{
+					"resource_identifier":              "test.com",
+					"audiences":                        []string{"aud_1", "aud_2"},
+					"refresh_token_expiration_minutes": 2,
+					"access_token_expiration_minutes":  2,
 				},
 			},
 			ExpectedOutput: authservers.AuthServer{
