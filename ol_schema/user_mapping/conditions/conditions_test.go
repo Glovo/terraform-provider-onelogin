@@ -3,8 +3,8 @@ package usermappingconditionsschema
 import (
 	"testing"
 
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	"github.com/onelogin/onelogin-go-sdk/pkg/services/user_mappings"
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	"github.com/glovo/onelogin-go-sdk/pkg/services/user_mappings"
 	"github.com/stretchr/testify/assert"
 )
 

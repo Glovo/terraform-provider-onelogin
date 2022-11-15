@@ -5,9 +5,9 @@ import (
 	"log"
 	"strconv"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/client"
 	roleschema "github.com/glovo/terraform-provider-onelogin/ol_schema/role"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/client"
 )
 
 // Roles returns a resource with the CRUD methods and Terraform Schema defined

@@ -3,8 +3,8 @@ package authserverscopesschema
 import (
 	"testing"
 
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	"github.com/onelogin/onelogin-go-sdk/pkg/services/auth_servers/scopes"
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	"github.com/glovo/onelogin-go-sdk/pkg/services/auth_servers/scopes"
 	"github.com/stretchr/testify/assert"
 )
 

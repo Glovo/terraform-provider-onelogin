@@ -3,8 +3,8 @@ package smarthookoptions
 import (
 	"testing"
 
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	"github.com/onelogin/onelogin-go-sdk/pkg/services/smarthooks"
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	"github.com/glovo/onelogin-go-sdk/pkg/services/smarthooks"
 	"github.com/stretchr/testify/assert"
 )
 

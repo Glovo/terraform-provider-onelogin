@@ -91,6 +91,10 @@ github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568/go.mod h1:xEzjJPgXI
 github.com/fogleman/gg v1.3.0/go.mod h1:R/bRT+9gY/C5z7JzPU0zXsXHKM4/ayA+zqcVNZzPa1k=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
 github.com/gliderlabs/ssh v0.2.2/go.mod h1:U7qILu1NlMHj9FlMhZLlkCdDnU1DBEAqr0aevW3Awn0=
+github.com/glovo/onelogin-go-sdk v1.1.21 h1:FCRTbGStoRceWSz9QCfyq6SzAa1zBD7GFPWBtCUeAyw=
+github.com/glovo/onelogin-go-sdk v1.1.21/go.mod h1:BG7txppbku/dPg8dO1fhxvOOrJs4EF1C9jrlAxbQjUA=
+github.com/glovo/onelogin-go-sdk v1.1.22 h1:Pfe85s4aAImaI3qYQXCF7J45yEK31MYbjB8PiWOn+Ko=
+github.com/glovo/onelogin-go-sdk v1.1.22/go.mod h1:BG7txppbku/dPg8dO1fhxvOOrJs4EF1C9jrlAxbQjUA=
 github.com/go-git/gcfg v1.5.0 h1:Q5ViNfGF8zFgyJWPqYwA7qGFoMTEiBmdlkcfRmpIMa4=
 github.com/go-git/gcfg v1.5.0/go.mod h1:5m20vg6GwYabIxaOonVkTdrILxQMpEShl1xiMF4ua+E=
 github.com/go-git/go-billy/v5 v5.2.0/go.mod h1:pmpqyWchKfYfrkb/UVH4otLvyi/5gJlGI4Hb3ZqZ3W0=
@@ -283,8 +287,6 @@ github.com/nsf/jsondiff v0.0.0-20200515183724-f29ed568f4ce h1:RPclfga2SEJmgMmz2k
 github.com/nsf/jsondiff v0.0.0-20200515183724-f29ed568f4ce/go.mod h1:uFMI8w+ref4v2r9jz+c9i1IfIttS/OkmLfrk1jne5hs=
 github.com/oklog/run v1.0.0 h1:Ru7dDtJNOyC66gQ5dQmaCa0qIsAUFY3sFpK1Xk8igrw=
 github.com/oklog/run v1.0.0/go.mod h1:dlhp/R75TPv97u0XWUtDeV/lRKWPKSdTuV0TZvrmrQA=
-github.com/onelogin/onelogin-go-sdk v1.1.20 h1:E3cIyZ9q9DNLv0PtFRT/d7BQtaiaiCpIfGdCgzLB6FU=
-github.com/onelogin/onelogin-go-sdk v1.1.20/go.mod h1:GM0+ziS1fhnPnxC2fLzVloxn+VzBwzXKkIaDOPoE5GU=
 github.com/onsi/ginkgo v1.6.0/go.mod h1:lLunBs/Ym6LB5Z9jYTR76FiuTmxDTDusOGeTQH+WWjE=
 github.com/onsi/ginkgo v1.12.0/go.mod h1:oUhWkIvk5aDxtKvDDuw8gItl8pKl42LzjC9KZE0HfGg=
 github.com/onsi/gomega v1.7.1/go.mod h1:XdKZgCCFLUoM/7CFJVPcG8C1xQ1AJ0vpAezJrB7JYyY=

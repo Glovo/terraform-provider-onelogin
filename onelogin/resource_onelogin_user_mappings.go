@@ -5,11 +5,11 @@ import (
 	"log"
 	"strconv"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/client"
 	usermappingschema "github.com/glovo/terraform-provider-onelogin/ol_schema/user_mapping"
 	usermappingactionsschema "github.com/glovo/terraform-provider-onelogin/ol_schema/user_mapping/actions"
 	usermappingconditionsschema "github.com/glovo/terraform-provider-onelogin/ol_schema/user_mapping/conditions"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/client"
 )
 
 // UserMappings attaches additional configuration and sso schemas and

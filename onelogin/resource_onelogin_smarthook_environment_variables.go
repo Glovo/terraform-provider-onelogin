@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/client"
 	smarthookenvironmentvariablesschema "github.com/glovo/terraform-provider-onelogin/ol_schema/smarthook/environment_variable"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/client"
 )
 
 // SmarthookEnvironmentVariable returns a resource with the CRUD methods and Terraform Schema defined

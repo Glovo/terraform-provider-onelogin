@@ -3,9 +3,9 @@ package onelogin
 import (
 	"log"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/client"
 	privilegeschema "github.com/glovo/terraform-provider-onelogin/ol_schema/privilege"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/client"
 )
 
 // privileges attaches additional configuration and sso schemas and

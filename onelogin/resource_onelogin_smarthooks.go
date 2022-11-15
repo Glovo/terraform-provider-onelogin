@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/client"
 	smarthooksschema "github.com/glovo/terraform-provider-onelogin/ol_schema/smarthook"
 	smarthookconditionsschema "github.com/glovo/terraform-provider-onelogin/ol_schema/smarthook/conditions"
 	smarthookoptions "github.com/glovo/terraform-provider-onelogin/ol_schema/smarthook/options"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/client"
 )
 
 // SmartHooks attaches additional configuration and sso schemas and

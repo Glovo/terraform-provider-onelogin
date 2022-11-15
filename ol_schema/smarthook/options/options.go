@@ -1,9 +1,9 @@
 package smarthookoptions
 
 import (
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	"github.com/glovo/onelogin-go-sdk/pkg/services/smarthooks"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	"github.com/onelogin/onelogin-go-sdk/pkg/services/smarthooks"
 )
 
 // Schema returns a key/value map of the various fields that make up

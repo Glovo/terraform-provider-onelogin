@@ -3,9 +3,9 @@ package privilegeschema
 import (
 	"testing"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	"github.com/glovo/onelogin-go-sdk/pkg/services/privileges"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	"github.com/onelogin/onelogin-go-sdk/pkg/services/privileges"
 	"github.com/stretchr/testify/assert"
 )
 

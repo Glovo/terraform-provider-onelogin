@@ -3,8 +3,8 @@ package onelogin
 import (
 	"fmt"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/client"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/client"
 )
 
 // AppRoleAttachment attaches additional configuration and sso schemas and

@@ -3,9 +3,9 @@ package authserverscopesschema
 import (
 	"strconv"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	"github.com/glovo/onelogin-go-sdk/pkg/services/auth_servers/scopes"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	"github.com/onelogin/onelogin-go-sdk/pkg/services/auth_servers/scopes"
 )
 
 // Schema returns a key/value map of the various fields that make up a Scope at OneLogin.

@@ -3,8 +3,8 @@ package smarthookenvironmentvariablesschema
 import (
 	"testing"
 
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	"github.com/onelogin/onelogin-go-sdk/pkg/services/smarthooks/envs"
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	"github.com/glovo/onelogin-go-sdk/pkg/services/smarthooks/envs"
 	"github.com/stretchr/testify/assert"
 )
 
