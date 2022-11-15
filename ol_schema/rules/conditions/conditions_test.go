@@ -3,8 +3,8 @@ package appruleconditionsschema
 import (
 	"testing"
 
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	apprules "github.com/onelogin/onelogin-go-sdk/pkg/services/apps/app_rules"
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	apprules "github.com/glovo/onelogin-go-sdk/pkg/services/apps/app_rules"
 	"github.com/stretchr/testify/assert"
 )
 

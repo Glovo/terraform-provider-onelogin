@@ -5,13 +5,13 @@ import (
 	"log"
 	"strconv"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/client"
 	appschema "github.com/glovo/terraform-provider-onelogin/ol_schema/app"
 	appconfigurationschema "github.com/glovo/terraform-provider-onelogin/ol_schema/app/configuration"
 	appparametersschema "github.com/glovo/terraform-provider-onelogin/ol_schema/app/parameters"
 	appprovisioningschema "github.com/glovo/terraform-provider-onelogin/ol_schema/app/provisioning"
 	appssoschema "github.com/glovo/terraform-provider-onelogin/ol_schema/app/sso"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/client"
 )
 
 // SAMLApps attaches additional configuration and sso schemas and

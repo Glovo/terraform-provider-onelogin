@@ -3,9 +3,9 @@ package appconfigurationschema
 import (
 	"strconv"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	"github.com/glovo/onelogin-go-sdk/pkg/services/apps"
 	"github.com/glovo/terraform-provider-onelogin/utils"
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	"github.com/onelogin/onelogin-go-sdk/pkg/services/apps"
 )
 
 func validSignatureAlgorithm(val interface{}, key string) (warns []string, errs []error) {

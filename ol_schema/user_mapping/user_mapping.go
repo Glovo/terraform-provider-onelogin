@@ -3,12 +3,12 @@ package usermappingschema
 import (
 	"strconv"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	usermappings "github.com/glovo/onelogin-go-sdk/pkg/services/user_mappings"
 	usermappingactionsschema "github.com/glovo/terraform-provider-onelogin/ol_schema/user_mapping/actions"
 	usermappingconditionsschema "github.com/glovo/terraform-provider-onelogin/ol_schema/user_mapping/conditions"
 	"github.com/glovo/terraform-provider-onelogin/utils"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	usermappings "github.com/onelogin/onelogin-go-sdk/pkg/services/user_mappings"
 )
 
 // Schema returns a key/value map of the various fields that make up the Rules of a OneLogin UserMapping.

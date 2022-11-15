@@ -8,9 +8,9 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/client"
+	users "github.com/glovo/onelogin-go-sdk/pkg/services/users"
 	userschema "github.com/glovo/terraform-provider-onelogin/ol_schema/user"
-	"github.com/onelogin/onelogin-go-sdk/pkg/client"
-	users "github.com/onelogin/onelogin-go-sdk/pkg/services/users"
 )
 
 // Users returns a resource with the CRUD methods and Terraform Schema defined

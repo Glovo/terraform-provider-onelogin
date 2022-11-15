@@ -1,7 +1,7 @@
 package appssoschema
 
 import (
-	"github.com/onelogin/onelogin-go-sdk/pkg/services/apps"
+	"github.com/glovo/onelogin-go-sdk/pkg/services/apps"
 )
 
 // FlattenOIDC takes a AppSSO instance and creates a map

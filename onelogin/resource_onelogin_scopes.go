@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"strconv"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/client"
+	"github.com/glovo/onelogin-go-sdk/pkg/services/auth_servers/scopes"
 	authserverscopesschema "github.com/glovo/terraform-provider-onelogin/ol_schema/auth_server/scopes"
 	"github.com/glovo/terraform-provider-onelogin/utils"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/client"
-	"github.com/onelogin/onelogin-go-sdk/pkg/services/auth_servers/scopes"
 )
 
 func Scopes() *schema.Resource {
@@ -25,7 +25,6 @@ func Scopes() *schema.Resource {
 			StateContext: func(ctx context.Context, d *schema.ResourceData, meta interface{}) ([]*schema.ResourceData, error) {
 				// d.Id() here is the last argument passed to the `terraform import RESOURCE_TYPE.RESOURCE_NAME RESOURCE_ID` command
 				authServerID, scopeID, err := utils.ParseNestedResourceImportId(d.Id())
-				d.Get("auth_server_id")
 				if err != nil {
 					return nil, err
 				}

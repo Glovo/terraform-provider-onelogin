@@ -3,10 +3,10 @@ package authserverschema
 import (
 	"strconv"
 
+	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
+	authservers "github.com/glovo/onelogin-go-sdk/pkg/services/auth_servers"
 	authserverconfigurationschema "github.com/glovo/terraform-provider-onelogin/ol_schema/auth_server/configuration"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/onelogin/onelogin-go-sdk/pkg/oltypes"
-	authservers "github.com/onelogin/onelogin-go-sdk/pkg/services/auth_servers"
 )
 
 // Schema returns a key/value map of the various fields that make up an Auth Server at OneLogin.
