@@ -35,13 +35,16 @@ func Inflate(s map[string]interface{}) (clientapps.ClientApp, error) {
 	var err error
 	clientApp := clientapps.ClientApp{
 		APIAuthID: oltypes.Int32(int32(s["api_auth_id"].(int))),
-		Name:      oltypes.String(s["name"].(string)),
 		AppID:     oltypes.Int32(int32(s["app_id"].(int))),
 	}
-	if val, notNil := s["scope_ids"].([]int32); notNil {
+	if val, notNil := s["name"].(string); notNil {
+		clientApp.Name = oltypes.String(val)
+	}
+	if val, notNil := s["scope_ids"].([]interface{}); notNil {
 		clientApp.ScopeIDs = make([]int32, len(val))
 		for i, v := range val {
-			clientApp.ScopeIDs[i] = v
+			iV := v.(int)
+			clientApp.ScopeIDs[i] = int32(iV)
 		}
 	}
 	return clientApp, err

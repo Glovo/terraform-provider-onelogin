@@ -69,7 +69,6 @@ func clientAppsUpdate(ctx context.Context, d *schema.ResourceData, m interface{}
 	clientApp, _ := authserversclientapps.Inflate(map[string]interface{}{
 		"app_id":      d.Get("app_id"),
 		"api_auth_id": d.Get("api_auth_id"),
-		"name":        d.Get("name"),
 		"scope_ids":   d.Get("scope_ids"),
 	})
 	client := m.(*client.APIClient)
