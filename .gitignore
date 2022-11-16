@@ -12,3 +12,4 @@ bin
 *.asc
 .idea/
 .DS_Store
+main_debug.go

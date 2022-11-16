@@ -24,11 +24,11 @@ func ClientApps() *schema.Resource {
 		Importer: &schema.ResourceImporter{
 			StateContext: func(ctx context.Context, d *schema.ResourceData, meta interface{}) ([]*schema.ResourceData, error) {
 				// d.Id() here is the last argument passed to the `terraform import RESOURCE_TYPE.RESOURCE_NAME RESOURCE_ID` command
-				sAppID, sApiAuthID, err := utils.ParseNestedResourceImportId(d.Id())
+				sApiAuthID, sAppID, err := utils.ParseNestedResourceImportId(d.Id())
 				if err != nil {
 					return nil, err
 				}
-				d.SetId(fmt.Sprintf("%s:%s", sAppID, sApiAuthID))
+				d.SetId(fmt.Sprintf("%s:%s", sApiAuthID, sAppID))
 				appID, err := strconv.Atoi(sAppID)
 				if err != nil {
 					return nil, err

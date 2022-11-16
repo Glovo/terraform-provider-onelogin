@@ -2,16 +2,11 @@ package onelogin
 
 import (
 	"context"
-	"errors"
 
 	"github.com/glovo/onelogin-go-sdk/pkg/client"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-)
-
-var (
-	errClientCredentials = errors.New("client_id or client_sercret or region missing")
 )
 
 // Provider creates a new provider with all the neccessary configurations.
@@ -58,6 +53,7 @@ func Provider() *schema.Provider {
 			"onelogin_smarthook_environment_variables": SmarthookEnvironmentVariables(),
 			"onelogin_privileges":                      Privileges(),
 			"onelogin_scopes":                          Scopes(),
+			"onelogin_client_apps":                     ClientApps(),
 		},
 		ConfigureContextFunc: configProvider,
 	}
