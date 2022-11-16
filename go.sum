@@ -95,6 +95,8 @@ github.com/glovo/onelogin-go-sdk v1.1.21 h1:FCRTbGStoRceWSz9QCfyq6SzAa1zBD7GFPWB
 github.com/glovo/onelogin-go-sdk v1.1.21/go.mod h1:BG7txppbku/dPg8dO1fhxvOOrJs4EF1C9jrlAxbQjUA=
 github.com/glovo/onelogin-go-sdk v1.1.22 h1:Pfe85s4aAImaI3qYQXCF7J45yEK31MYbjB8PiWOn+Ko=
 github.com/glovo/onelogin-go-sdk v1.1.22/go.mod h1:BG7txppbku/dPg8dO1fhxvOOrJs4EF1C9jrlAxbQjUA=
+github.com/glovo/onelogin-go-sdk v1.1.23 h1:TbTDkvcrV/DIuz19JKN7gGCNAnBqojiBcMednSprLts=
+github.com/glovo/onelogin-go-sdk v1.1.23/go.mod h1:BG7txppbku/dPg8dO1fhxvOOrJs4EF1C9jrlAxbQjUA=
 github.com/go-git/gcfg v1.5.0 h1:Q5ViNfGF8zFgyJWPqYwA7qGFoMTEiBmdlkcfRmpIMa4=
 github.com/go-git/gcfg v1.5.0/go.mod h1:5m20vg6GwYabIxaOonVkTdrILxQMpEShl1xiMF4ua+E=
 github.com/go-git/go-billy/v5 v5.2.0/go.mod h1:pmpqyWchKfYfrkb/UVH4otLvyi/5gJlGI4Hb3ZqZ3W0=

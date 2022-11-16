@@ -23,7 +23,7 @@ func Schema() map[string]*schema.Schema {
 			Computed: true,
 		},
 		"scope_ids": {
-			Type:     schema.TypeList,
+			Type:     schema.TypeSet,
 			Required: true,
 			Elem:     &schema.Schema{Type: schema.TypeInt},
 		},
@@ -40,11 +40,10 @@ func Inflate(s map[string]interface{}) (clientapps.ClientApp, error) {
 	if val, notNil := s["name"].(string); notNil {
 		clientApp.Name = oltypes.String(val)
 	}
-	if val, notNil := s["scope_ids"].([]interface{}); notNil {
-		clientApp.ScopeIDs = make([]int32, len(val))
-		for i, v := range val {
-			iV := v.(int)
-			clientApp.ScopeIDs[i] = int32(iV)
+	if s["scope_ids"] != nil {
+		clientApp.ScopeIDs = make([]int32, len(s["scope_ids"].(*schema.Set).List()))
+		for i, appID := range s["scope_ids"].(*schema.Set).List() {
+			clientApp.ScopeIDs[i] = int32(appID.(int))
 		}
 	}
 	return clientApp, err

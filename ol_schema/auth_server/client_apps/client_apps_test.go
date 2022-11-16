@@ -5,8 +5,13 @@ import (
 
 	"github.com/glovo/onelogin-go-sdk/pkg/oltypes"
 	clientapps "github.com/glovo/onelogin-go-sdk/pkg/services/auth_servers/client_apps"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/stretchr/testify/assert"
 )
+
+func mockSetFn(i interface{}) int {
+	return i.(int)
+}
 
 func TestSchema(t *testing.T) {
 	t.Run("creates and returns a map of an Scope Schema", func(t *testing.T) {
@@ -26,7 +31,7 @@ func TestInflate(t *testing.T) {
 				"app_id":      2,
 				"api_auth_id": 1,
 				"name":        "value",
-				"scope_ids":   []int32{2, 3},
+				"scope_ids":   schema.NewSet(mockSetFn, []interface{}{2, 3}),
 			},
 			ExpectedOutput: clientapps.ClientApp{
 				AppID:     oltypes.Int32(2),

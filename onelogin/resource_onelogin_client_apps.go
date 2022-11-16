@@ -62,13 +62,14 @@ func clientAppsCreate(ctx context.Context, d *schema.ResourceData, m interface{}
 	tflog.Info(ctx, "[CREATED] Created Client App ID %d on Auth Server %d", *(clientApp.AppID), *(clientApp.APIAuthID))
 
 	d.SetId(fmt.Sprintf("%d:%d", *(clientApp.APIAuthID), *(clientApp.AppID)))
-	return scopesRead(ctx, d, m)
+	return clientAppsRead(ctx, d, m)
 }
 
 func clientAppsUpdate(ctx context.Context, d *schema.ResourceData, m interface{}) diag.Diagnostics {
 	clientApp, _ := authserversclientapps.Inflate(map[string]interface{}{
 		"app_id":      d.Get("app_id"),
 		"api_auth_id": d.Get("api_auth_id"),
+		"name":        d.Get("name"),
 		"scope_ids":   d.Get("scope_ids"),
 	})
 	client := m.(*client.APIClient)
@@ -80,7 +81,7 @@ func clientAppsUpdate(ctx context.Context, d *schema.ResourceData, m interface{}
 	tflog.Info(ctx, "[UPDATED] Updated Client App ID %d on Auth Server %d", *(clientApp.AppID), *(clientApp.APIAuthID))
 
 	d.SetId(fmt.Sprintf("%d:%d", *(clientApp.APIAuthID), *(clientApp.AppID)))
-	return scopesRead(ctx, d, m)
+	return clientAppsRead(ctx, d, m)
 }
 
 func clientAppsRead(ctx context.Context, d *schema.ResourceData, m interface{}) diag.Diagnostics {

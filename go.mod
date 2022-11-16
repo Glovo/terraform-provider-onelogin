@@ -3,7 +3,7 @@ module github.com/glovo/terraform-provider-onelogin
 go 1.17
 
 require (
-	github.com/glovo/onelogin-go-sdk v1.1.22
+	github.com/glovo/onelogin-go-sdk v1.1.23
 	github.com/hashicorp/terraform-plugin-log v0.2.1
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.7.0
 	github.com/stretchr/testify v1.7.0
