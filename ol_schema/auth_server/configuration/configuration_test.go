@@ -26,7 +26,7 @@ func TestInflate(t *testing.T) {
 		"creates and returns the address of an AuthServerConfiguration": {
 			ResourceData: map[string]interface{}{
 				"resource_identifier":              "test.com",
-				"audiences":                        []string{"aud_1", "aud_2"},
+				"audiences":                        []interface{}{"aud_1", "aud_2"},
 				"refresh_token_expiration_minutes": 2,
 				"access_token_expiration_minutes":  2,
 			},
