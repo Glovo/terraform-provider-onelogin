@@ -37,10 +37,10 @@ func Schema() map[string]*schema.Schema {
 // a AppProvisioning struct, a sub-field of a OneLogin App.
 func Inflate(in map[string]interface{}) authservers.AuthServerConfiguration {
 	out := authservers.AuthServerConfiguration{}
-	if val, notNil := in["audiences"].([]string); notNil {
+	if val, notNil := in["audiences"].([]interface{}); notNil {
 		out.Audiences = make([]string, len(val))
 		for i, str := range val {
-			out.Audiences[i] = str
+			out.Audiences[i] = str.(string)
 		}
 	}
 	if ri, notNil := in["resource_identifier"].(string); notNil {

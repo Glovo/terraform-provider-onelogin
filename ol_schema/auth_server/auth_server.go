@@ -43,9 +43,13 @@ func Inflate(s map[string]interface{}) (authservers.AuthServer, error) {
 			authServer.ID = oltypes.Int32(int32(id))
 		}
 	}
+	var cfg []interface{}
 	if s["configuration"] != nil {
+		cfg = s["configuration"].([]interface{})
+	}
+	if cfg != nil && len(cfg) > 0 {
 		var conf authservers.AuthServerConfiguration
-		conf = authserverconfigurationschema.Inflate(s["configuration"].(map[string]interface{}))
+		conf = authserverconfigurationschema.Inflate(cfg[0].(map[string]interface{}))
 		authServer.Configuration = &conf
 	}
 	return authServer, err
