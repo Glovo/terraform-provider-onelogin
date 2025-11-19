@@ -1,6 +1,6 @@
 module github.com/glovo/terraform-provider-onelogin
 
-go 1.17
+go 1.24.0
 
 require (
 	github.com/glovo/onelogin-go-sdk v1.1.23
@@ -12,6 +12,8 @@ require (
 require (
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
 	github.com/klauspost/compress v1.11.2 // indirect
+	golang.org/x/sync v0.18.0 // indirect
+	golang.org/x/telemetry v0.0.0-20251008203120-078029d740a8 // indirect
 )
 
 require (
@@ -59,15 +61,14 @@ require (
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/zclconf/go-cty v1.8.4 // indirect
 	go.opencensus.io v0.22.4 // indirect
-	golang.org/x/crypto v0.0.0-20210421170649-83a5a9bb288b // indirect
+	golang.org/x/crypto v0.45.0 // indirect
 	golang.org/x/lint v0.0.0-20200302205851-738671d3881b // indirect
-	golang.org/x/mod v0.3.0 // indirect
-	golang.org/x/net v0.0.0-20210326060303-6b1517762897 // indirect
+	golang.org/x/mod v0.29.0 // indirect
+	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d // indirect
-	golang.org/x/sys v0.0.0-20210608053332-aa57babbf139 // indirect
-	golang.org/x/text v0.3.6 // indirect; indirectgithub.com/hashicorp/terraform-plugin-sdk/v2 v2.4.3
-	golang.org/x/tools v0.0.0-20200713011307-fd294ab11aed // indirect
-	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543 // indirect
+	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/text v0.31.0 // indirect; indirectgithub.com/hashicorp/terraform-plugin-sdk/v2 v2.4.3
+	golang.org/x/tools v0.38.0 // indirect
 	google.golang.org/api v0.29.0 // indirect
 	google.golang.org/appengine v1.6.6 // indirect
 	google.golang.org/genproto v0.0.0-20200711021454-869866162049 // indirect
