@@ -1,17 +1,16 @@
 <div align="center">
 
-# 🛠️ terraform-provider-onelogin
+# terraform-provider-onelogin
 
 **Terraform provider to manage OneLogin apps, users, roles and auth servers as code.**
 
 A maintained Glovo fork (from v0.2.0) of the community OneLogin provider. It is a Terraform plugin, not a service: it runs on the machine that runs `terraform`, and it is published as GitHub release artifacts.
 
-[![Go](https://img.shields.io/badge/Go-1.17-00ADD8?logo=go&logoColor=white)](go.mod)
-[![Terraform Plugin SDK](https://img.shields.io/badge/Plugin_SDK-v2.7.0-844FBA?logo=terraform&logoColor=white)](go.mod)
-[![Protocol](https://img.shields.io/badge/Plugin_protocol-5.0-844FBA?logo=terraform&logoColor=white)](terraform-registry-manifest.json)
+[![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)](go.mod)
+[![Terraform Plugin SDK](https://img.shields.io/badge/Plugin_SDK-844FBA?logo=terraform&logoColor=white)](go.mod)
+[![Protocol](https://img.shields.io/badge/Plugin_protocol-844FBA?logo=terraform&logoColor=white)](terraform-registry-manifest.json)
 [![Release](https://img.shields.io/badge/Release-GoReleaser-blue)](.goreleaser.yml)
 <br/>
-[![test files](https://img.shields.io/badge/test_files-36-brightgreen)](#testing)
 [![Go Report Card](https://goreportcard.com/badge/github.com/glovo/terraform-provider-onelogin)](https://goreportcard.com/report/github.com/glovo/terraform-provider-onelogin)
 
 </div>
@@ -197,7 +196,7 @@ export ONELOGIN_OAPI_URL=<the api url for your region>
 ```text
 .
 ├── main.go                         # plugin entry point (plugin.Serve)
-├── onelogin/ ⭐                     # provider, resources, data sources, acceptance tests
+├── onelogin/ source of truth: # provider, resources, data sources, acceptance tests
 ├── ol_schema/                      # pack/unpack of OneLogin JSON <-> Go structs, per resource
 ├── utils/                          # shared helpers
 ├── examples/                       # .tf files used by the acceptance tests (25 files)
